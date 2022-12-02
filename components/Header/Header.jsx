@@ -39,13 +39,13 @@ const header = () => {
                 <ul>
                     <li>
                         <Link href="/">
-                            <i class="fa-solid fa-house"></i>
+                            <i className="fa-solid fa-house"></i>
                             <h4>Home</h4>
                         </Link>
                     </li>
                     <li>
                         <Link href="/contact">
-                            <i class="fa-sharp fa-solid fa-message-text"></i>
+                            <i className="fa-sharp fa-solid fa-message-text"></i>
                             <h4>Contact</h4>
                         </Link>
 
