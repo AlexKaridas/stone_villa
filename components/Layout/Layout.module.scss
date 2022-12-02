@@ -1,0 +1,19 @@
+div.layout {
+    overflow: hidden;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+@media only screen and (max-width: 1563px) {
+    div.layout {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    div.layout {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
