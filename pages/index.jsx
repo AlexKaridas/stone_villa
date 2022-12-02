@@ -80,7 +80,7 @@ export default function Home() {
       </section>
       <hr id={styles.lineBreak} data-aos="fade-right" />
       <section className={styles.description}>
-        <p id={styles.titleD}>The Host's choice..</p>
+        <p id={styles.titleD}>The Host&apos;s choice..</p>
         <div className={styles.imagesAndText}>
           <div className={styles.descriptionText} data-aos="fade-up">
             <p>Απολαύστε τις διακοπές σας!
