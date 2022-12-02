@@ -1,7 +1,6 @@
 import styles from '../components/Index/Index.module.scss';
 import AOS from 'aos';
 import { useEffect, useState } from 'react';
-const axios = require('axios');
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -25,7 +24,7 @@ export default function Home() {
     return (
       <div className={styles.sideIcon}>
         <div className={styles.image}>
-          <img src={landmarkPicture}></img>
+          <img src={landmarkPicture} alt="landmark picture"></img>
         </div>
         <div className={styles.imgTitle}>
           <p id={styles.landmarkTitle}>{landmarkTitle}</p>
@@ -65,7 +64,7 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <section className={styles.landing}>
-        <img src="/quote.png" id={styles.quote} data-aos="fade-right" data-aos-duration="1000"></img>
+        <img src="/quote.png" id={styles.quote} data-aos="fade-right" data-aos-duration="1000" alt="quote icon"></img>
         <div className={styles.landingText} data-aos="fade-right" data-aos-duration="1000">
           <div className={styles.title}>
             <h1 className={styles.title} data-aos="fade-right" data-aos-duration="1000">
@@ -75,7 +74,7 @@ export default function Home() {
           <p data-aos="fade-right" data-aos-duration="1000">Αυτή η πέτρινη βίλα μουζακίου βρίσκεται στο Μουζάκι, σε απόσταση σαραντα έξι χιλιόμετρα από τα Μετέωρα, και προσφέρει κήπο, δωρεάν wifi και εικοσιτετράωρη ρεσεψιόν. Το κατάλυμα προσφέρει μπαλκόνι και θέα στον κήπο.</p>
         </div>
         <a href="#booking" id={styles.bookButton} data-aos="fade-right" data-aos-duration="1000"><p>Book Your Stay</p></a>
-        <img src="/arrow.png" id={styles.arrow} data-aos="fade-right" data-aos-duration="1000"></img>
+        <img src="/arrow.png" alt="arrow icon" id={styles.arrow} data-aos="fade-right" data-aos-duration="1000"></img>
         <div className={styles.landing_image} data-aos="fade-up" data-aos-duration="1000">
         </div>
       </section>
@@ -128,7 +127,7 @@ export default function Home() {
       </section>
       <hr id={styles.lineBreak} data-aos="fade-right" />
       <div className={styles.amenitiesTitle}>
-        <p>Amenities</p>
+        <p>Ανέσεις</p>
       </div>
       <section className={styles.amenities}>
         <div className={styles.amenitiesIconsContainer} data-aos="fade-right" data-aos-duration="1000">
@@ -182,8 +181,8 @@ export default function Home() {
               Το πάρκινγκ είναι εύκολο και δωρεάν, δίπλα από το αρχοντικό και η θέρμανση είναι αυτόνομη (πετρέλαιο).
             </p>
             <div className={styles.importantContainer}>
-              <img src="https://cdn-icons-png.flaticon.com/512/80/80795.png"></img>
-              <p id={styles.important}> Σε περίπτωση λιγότερων ατόμων επικοινωνήστε με τον οικοδεσπότη για τροποποίηση τιμής.</p>
+              <img src="https://cdn-icons-png.flaticon.com/512/80/80795.png" alt="exclamation mark icon"></img>
+              <p id={styles.important}>Σε περίπτωση λιγότερων ατόμων επικοινωνήστε με τον οικοδεσπότη για τροποποίηση τιμής.</p>
             </div>
           </article>
         </div>
@@ -191,55 +190,55 @@ export default function Home() {
       <hr id={styles.lineBreak} data-aos="fade-right" />
       <section className={styles.GuestAccess}>
         <div className={styles.amenitiesTitle}>
-          <p>Guest Access</p>
+          <p>Αξιοθέατα</p>
         </div>
         <div className={styles.subtitleContainer}>
-          <p>Distance from important landmarks</p>
-          <p>Choose a landmark</p>
+          <p>Απόσταση από αξιοθέατα</p>
+          <p>Επιλέξτε τοποθεσία</p>
         </div>
         <div className={styles.GuestAccessContainer}>
           <div className={styles.roadmapContainer} data-aos="fade-right" data-aos-duration="1000">
             <div className={styles.roadmap}>
               <div className={styles.roadmapItem}>
-                <p id={styles.time}>12 minutes</p>
+                <p id={styles.time}>12 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p id={styles.karaiskakis} onClick={() => setIsClicked('Karaiskakis')}>Karaiskaki's birth cave</p>
+                <p id={styles.karaiskakis} onClick={() => setIsClicked('Karaiskakis')}>Σπήλαιο γέννησης Καραισκάκη</p>
               </div>
               <hr id={styles.destination1road} />
               <div className={styles.roadmapItem}>
-                <p id={styles.time}>15 minutes</p>
+                <p id={styles.time}>15 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p id={styles.paleokarya} onClick={() => setIsClicked('Arched bridge Paleokarya')}>Waterfall- Arched bridge Paleokarya</p>
+                <p id={styles.paleokarya} onClick={() => setIsClicked('Arched bridge Paleokarya')}>Καταράκτης - Πέτρινη Γέφυρα Παλαιοκαρυάς</p>
               </div>
               <hr id={styles.destination2road} />
               <div className={styles.roadmapItem}>
-                <p id={styles.time}>20 minutes</p>
+                <p id={styles.time}>20 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p onClick={() => setIsClicked('Elf Mill')}>Trikala - Elf Mill</p>
+                <p onClick={() => setIsClicked('Elf Mill')}>Τρίκαλα - Μύλος των Ξωτικών</p>
               </div>
               <hr id={styles.destination3road} />
               <div className={styles.roadmapItem}>
-                <p id={styles.time}>25 minutes</p>
+                <p id={styles.time}>25 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p onClick={() => setIsClicked('Karditsa')}>Karditsa</p> <p id={styles.elati} onClick={() => setIsClicked('Elati')}>- Elati</p>
+                <p onClick={() => setIsClicked('Karditsa')}>Καρδίτσα</p> <p id={styles.elati} onClick={() => setIsClicked('Elati')}>- Elati</p>
               </div>
               <hr id={styles.destination4road} />
               <div className={styles.roadmapItem}>
-                <p id={styles.time}>30 minutes</p>
+                <p id={styles.time}>30 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p id={styles.kalabaka} onClick={() => setIsClicked('Kalabaka')}>Kalabaka - Meteora</p>
+                <p id={styles.kalabaka} onClick={() => setIsClicked('Kalabaka')}>Καλαμπάκα - Μετέωρα</p>
               </div>
               <hr id={styles.destination5road} />
               <div className={styles.roadmapItem}>
-                <p id={styles.time}>40 minutes</p>
+                <p id={styles.time}>40 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p onClick={() => setIsClicked('Pertouli')}>Pertouli</p>
+                <p onClick={() => setIsClicked('Pertouli')}>Πέρτουλι</p>
               </div>
               <hr id={styles.destination6road} />
               <div className={styles.roadmapItem}>
-                <p id={styles.time}>45 minutes</p>
+                <p id={styles.time}>45 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p onClick={() => setIsClicked('Plastira')}>Lake Plastira</p>
+                <p onClick={() => setIsClicked('Plastira')}>Λίμνη Πλαστήρα</p>
               </div>
             </div>
           </div>

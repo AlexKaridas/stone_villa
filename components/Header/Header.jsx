@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import styles from './header.module.scss';
 import Link from 'next/link';
 
-const header = () => {
+const Header = () => {
     const [mounted, setMounted] = useState(false);
     const { theme, setTheme } = useTheme("");
     useEffect(() => setMounted(true), []);
@@ -12,10 +12,10 @@ const header = () => {
 
     let themeButton;
     if (theme === 'light') {
-        themeButton = <button onClick={() => setTheme("dark") && setMounted(true)}><img id={styles.mountain} src="/mountain.png"></img></button>
+        themeButton = <button onClick={() => setTheme("dark") && setMounted(true)}><img id={styles.mountain} src="/mountain.png" alt="mountain image"></img></button>
     }
     else {
-        themeButton = <button onClick={() => setTheme("light") && setMounted(true)}><img id={styles.nightMountain} src="/night-landscape.png"></img></button>
+        themeButton = <button onClick={() => setTheme("light") && setMounted(true)}><img id={styles.nightMountain} src="/night-landscape.png" alt="night mountain image"></img></button>
     };
     return (
         <div className={styles.nav}>
@@ -62,4 +62,4 @@ const header = () => {
     )
 }
 
-export default header
+export default Header
