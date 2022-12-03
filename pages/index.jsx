@@ -247,11 +247,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.booking}>
-        <div className={styles.amenitiesTitle}>
-          <p>Booking</p>
-        </div>
-      </section>
     </div>
   )
 }
