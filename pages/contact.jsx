@@ -9,9 +9,9 @@ const Contact = () => {
                     <h2>The Host</h2>
                     <div className={styles.profile}></div>
                     <div className={styles.socialComponents}>
-                        <a href="https://www.airbnb.com/rooms/51678097?source_impression_id=p3_1670292638_VO7LUykuncm99jdp" target="_blank" id={styles.airbnb}><i className="fa-brands fa-airbnb"></i><p>AirBnb</p></a>
-                        <a href="https://www.instagram.com/stonevillamouzaki/" target="_blank" id={styles.insta}><i className="fa-brands fa-instagram"></i>Instagram</a>
-                        <a href="https://www.booking.com/hotel/gr/stone-villa-mouzaki-trikala-karditsa-mouzaki.el.html" target="_blank" id={styles.booking}><i className="fa-solid fa-b"></i><p>Booking</p></a>
+                        <a href="https://www.airbnb.com/rooms/51678097?source_impression_id=p3_1670292638_VO7LUykuncm99jdp" target="_blank" rel="noreferrer" id={styles.airbnb}><i className="fa-brands fa-airbnb"></i><p>AirBnb</p></a>
+                        <a href="https://www.instagram.com/stonevillamouzaki/" target="_blank" rel="noreferrer" id={styles.insta}><i className="fa-brands fa-instagram"></i>Instagram</a>
+                        <a href="https://www.booking.com/hotel/gr/stone-villa-mouzaki-trikala-karditsa-mouzaki.el.html" target="_blank" rel="noreferrer" id={styles.booking}><i className="fa-solid fa-b"></i><p>Booking</p></a>
                     </div>
                 </div>
                 <form>

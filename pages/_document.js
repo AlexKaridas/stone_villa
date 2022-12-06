@@ -11,14 +11,13 @@ export default function Document() {
                     rel="stylesheet"
                 />
                 <link rel="preconnect" href="https://fonts.googleapis.com" ></link>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin ></link>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" ></link>
                 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
                 <script src="https://unpkg.com/aos@next/dist/aos.js" async></script>
             </Head>
             <body>
                 <Main />
                 <NextScript />
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </body>
         </Html>
     )
