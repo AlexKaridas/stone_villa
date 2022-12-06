@@ -61,6 +61,36 @@ export default function Home() {
     }
   }
 
+  // <div className={styles.galleryCollumn} data-aos="fade-up">
+  //   {/* <a href='/' target="_blank">
+  //     <Image src={{ count }.jpg} alt="gallery" width={300} height={200} />
+  //   </a> */}
+  // </div>
+
+  // const galleryCollumns = () => {
+  //   return (
+  //     <div className={styles.galleryCollumn} data-aos="fade-up">
+
+  //     </div>
+  //   )
+  // }
+
+  // const Images = () => {
+  //   return (
+  //     <a href="/" target="_blank">
+  //       <Image src= {count} alt="gallery" width={300} height={200} />
+  //     </a>
+  //   )
+  // }
+
+  // const galleryImages = () => {
+  //   for (let i = 0; i< 7; i++) {
+  //     rows.push(< key={i} />);
+  //   }
+  //   return (
+  //   )
+  // }
+
   return (
     <div className={styles.main}>
       <section className={styles.landing}>
@@ -78,7 +108,9 @@ export default function Home() {
         <div className={styles.landing_image} data-aos="fade-up" data-aos-duration="1000">
         </div>
       </section>
+
       <hr id={styles.lineBreak} data-aos="fade-right" />
+
       <section className={styles.description}>
         <p id={styles.titleD}>The Host&apos;s choice..</p>
         <div className={styles.imagesAndText}>
@@ -88,6 +120,7 @@ export default function Home() {
               Η stonevilla θα σας προσφέρει όλα όσα χρειάζεστε για να έχετε μια ευχάριστη διαμονή και να εξερευνήσετε όλη την ευρύτερη περιοχή καθώς θα σας ενημερώσω κατάλληλα και για όλα τα μέρη που αξίζει να επισκεφτείτε
               (Μετέωρα, Μύλος των ξωτικών, Ελάτη, Περτούλι, λίμνη Πλαστήρα, Τρίκαλα ..κτλπ)</p>
           </div>
+
           <div className={styles.gallery}>
             <div className={styles.galleryCollumn} data-aos="fade-up">
               <a href="/" target="_blank">
@@ -100,6 +133,7 @@ export default function Home() {
                 <img className={styles.image} src="3.jpg" alt="stone_villa_interior_image"></img>
               </a>
             </div>
+
             <div className={styles.galleryCollumn} data-aos="fade-up">
               <a href="/" target="_blank">
                 <img className={styles.image} src="4.jpg" alt="stone_villa_interior_image"></img>
@@ -111,6 +145,7 @@ export default function Home() {
                 <img className={styles.image} src="6.jpg" alt="stone_villa_interior_image"></img>
               </a>
             </div>
+
             <div className={styles.galleryCollumn} data-aos="fade-up">
               <a href="/" target="_blank">
                 <img className={styles.image} src="7.jpg" alt="stone_villa_interior_image"></img>
@@ -122,9 +157,58 @@ export default function Home() {
                 <img className={styles.image} src="9.jpg" alt="stone_villa_interior_image"></img>
               </a>
             </div>
+
+            {/* <div className={styles.galleryCollumn} data-aos="fade-up">
+              <a href="/" target="_blank">
+                <img className={styles.image} src="10.jpg" alt="stone_villa_interior_image"></img>
+              </a>
+              <a href="/" target="_blank">
+                <img className={styles.image} src="11.jpg" alt="stone_villa_interior_image"></img>
+              </a>
+              <a href="/" target="_blank">
+                <img className={styles.image} src="12.jpg" alt="stone_villa_interior_image"></img>
+              </a>
+            </div> */}
+
+            {/* <div className={styles.galleryCollumn} data-aos="fade-up">
+              <a href="/" target="_blank">
+                <img className={styles.image} src="13.jpg" alt="stone_villa_interior_image"></img>
+              </a>
+              <a href="/" target="_blank">
+                <img className={styles.image} src="14.jpg" alt="stone_villa_interior_image"></img>
+              </a>
+              <a href="/" target="_blank">
+                <img className={styles.image} src="15.jpg" alt="stone_villa_interior_image"></img>
+              </a>
+            </div> */}
+
+            {/* <div className={styles.galleryCollumn} data-aos="fade-up">
+              <a href="/" target="_blank">
+                <img className={styles.image} src="16.jpg" alt="stone_villa_interior_image"></img>
+              </a>
+              <a href="/" target="_blank">
+                <img className={styles.image} src="17.jpg" alt="stone_villa_interior_image"></img>
+              </a>
+              <a href="/" target="_blank">
+                <img className={styles.image} src="18.jpg" alt="stone_villa_interior_image"></img>
+              </a>
+            </div> */}
+
+            {/* <div className={styles.galleryCollumn} data-aos="fade-up">
+              <a href="/" target="_blank">
+                <img className={styles.image} src="19.jpg" alt="stone_villa_interior_image"></img>
+              </a>
+              <a href="/" target="_blank">
+                <img className={styles.image} src="20.jpg" alt="stone_villa_interior_image"></img>
+              </a>
+              <a href="/" target="_blank">
+                <img className={styles.image} src="21.jpg" alt="stone_villa_interior_image"></img>
+              </a>
+            </div> */}
+
           </div>
         </div>
-      </section>
+      </section >
       <hr id={styles.lineBreak} data-aos="fade-right" />
       <div className={styles.amenitiesTitle}>
         <p>Ανέσεις</p>
@@ -247,6 +331,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </div >
   )
 }

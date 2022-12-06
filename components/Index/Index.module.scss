@@ -24,11 +24,11 @@ div.main {
             position: relative;
             background-image: url('/stone_villa2.jpg');
             width: 80vw;
-            height: 43vw;
+            height: 45vw;
             background-repeat: no-repeat;
             background-position: center;
-            object-fit: cover;
-            margin-left: 35vw;
+            background-size: cover;
+            margin-left: 38vw;
         }
 
         div.landingText {
@@ -37,16 +37,13 @@ div.main {
             left: 0;
             width: 44vw;
             text-align: left;
-            background-color: rgba(255, 255, 255, 0.4);
             z-index: 2;
 
             h1.title {
                 position: relative;
                 font-size: 2.5vw;
                 color: var(--foreground);
-                background-color: var(--background);
                 font-weight: 400;
-                white-space: nowrap;
                 padding-left: 20px;
             }
 
@@ -61,7 +58,7 @@ div.main {
             }
 
             p {
-                position: absolute;
+                position: relative;
                 text-align: start;
                 padding-top: 80px;
                 font-size: 1vw;
