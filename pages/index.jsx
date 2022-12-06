@@ -61,36 +61,6 @@ export default function Home() {
     }
   }
 
-  // <div className={styles.galleryCollumn} data-aos="fade-up">
-  //   {/* <a href='/' target="_blank">
-  //     <Image src={{ count }.jpg} alt="gallery" width={300} height={200} />
-  //   </a> */}
-  // </div>
-
-  // const galleryCollumns = () => {
-  //   return (
-  //     <div className={styles.galleryCollumn} data-aos="fade-up">
-
-  //     </div>
-  //   )
-  // }
-
-  // const Images = () => {
-  //   return (
-  //     <a href="/" target="_blank">
-  //       <Image src= {count} alt="gallery" width={300} height={200} />
-  //     </a>
-  //   )
-  // }
-
-  // const galleryImages = () => {
-  //   for (let i = 0; i< 7; i++) {
-  //     rows.push(< key={i} />);
-  //   }
-  //   return (
-  //   )
-  // }
-
   return (
     <div className={styles.main}>
       <section className={styles.landing}>
@@ -103,7 +73,7 @@ export default function Home() {
           </div>
           <p data-aos="fade-right" data-aos-duration="1000">Αυτή η πέτρινη βίλα μουζακίου βρίσκεται στο Μουζάκι, σε απόσταση σαραντα έξι χιλιόμετρα από τα Μετέωρα, και προσφέρει κήπο, δωρεάν wifi και εικοσιτετράωρη ρεσεψιόν. Το κατάλυμα προσφέρει μπαλκόνι και θέα στον κήπο.</p>
         </div>
-        <a href="#booking" id={styles.bookButton} data-aos="fade-right" data-aos-duration="1000"><p>Book Your Stay</p></a>
+        <Link href="/contact" id={styles.bookButton} data-aos="fade-right" data-aos-duration="1000"><p>Book Your Stay</p></Link>
         <img src="/arrow.png" alt="arrow icon" id={styles.arrow} data-aos="fade-right" data-aos-duration="1000"></img>
         <div className={styles.landing_image} data-aos="fade-up" data-aos-duration="1000">
         </div>
