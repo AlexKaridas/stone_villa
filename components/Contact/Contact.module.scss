@@ -60,41 +60,41 @@ div.container {
 
                 }
 
-                #insta {
-                    background-color: #ffffff;
-                    color: #833AB4;
-                    font-weight: 500;
-                    border-radius: 5px;
+                // #insta {
+                //     background-color: #ffffff;
+                //     color: #833AB4;
+                //     font-weight: 500;
+                //     border-radius: 5px;
 
-                    &:hover {
-                        color: #ffffff;
-                        background-image: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
-                    }
-                }
+                //     &:hover {
+                //         color: #ffffff;
+                //         background-image: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+                //     }
+                // }
 
-                #airbnb {
-                    background-color: #ffffff;
-                    color: #FF385C;
-                    font-weight: 500;
-                    border-radius: 5px;
+                // #airbnb {
+                //     background-color: #ffffff;
+                //     color: #FF385C;
+                //     font-weight: 500;
+                //     border-radius: 5px;
 
-                    &:hover {
-                        color: #ffffff;
-                        background-image: linear-gradient(45deg, #FD5C63, #C30B03);
-                    }
-                }
+                //     &:hover {
+                //         color: #ffffff;
+                //         background-image: linear-gradient(45deg, #FD5C63, #C30B03);
+                //     }
+                // }
 
-                #booking {
-                    background-color: #ffffff;
-                    color: #003580;
-                    font-weight: 500;
-                    border-radius: 5px;
+                // #booking {
+                //     background-color: #ffffff;
+                //     color: #003580;
+                //     font-weight: 500;
+                //     border-radius: 5px;
 
-                    &:hover {
-                        color: #ffffff;
-                        background-image: linear-gradient(45deg, #003580, #003580);
-                    }
-                }
+                //     &:hover {
+                //         color: #ffffff;
+                //         background-image: linear-gradient(45deg, #003580, #003580);
+                //     }
+                // }
             }
         }
 
@@ -163,7 +163,8 @@ div.container {
                 width: 90%;
 
                 textarea {
-                    width: 100%;
+                    min-width: 100%;
+                    min-height: 200px;
                     padding: 7px;
                     font-size: 15px;
                     cursor: pointer;
@@ -217,41 +218,41 @@ div.container {
                     color: #fff;
                 }
 
-                #insta {
-                    background-color: #333;
-                    color: #b444ff;
-                    font-weight: 500;
-                    border-radius: 5px;
+                // #insta {
+                //     background-color: #333;
+                //     color: #b444ff;
+                //     font-weight: 500;
+                //     border-radius: 5px;
 
-                    &:hover {
-                        color: #ffffff;
-                        background-image: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
-                    }
-                }
+                //     &:hover {
+                //         color: #ffffff;
+                //         background-image: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+                //     }
+                // }
 
-                #airbnb {
-                    background-color: #333;
-                    color: #FF385C;
-                    font-weight: 500;
-                    border-radius: 5px;
+                // #airbnb {
+                //     background-color: #333;
+                //     color: #FF385C;
+                //     font-weight: 500;
+                //     border-radius: 5px;
 
-                    &:hover {
-                        color: #ffffff;
-                        background-image: linear-gradient(45deg, #FD5C63, #C30B03);
-                    }
-                }
+                //     &:hover {
+                //         color: #ffffff;
+                //         background-image: linear-gradient(45deg, #FD5C63, #C30B03);
+                //     }
+                // }
 
-                #booking {
-                    background-color: #333;
-                    color: #006aff;
-                    font-weight: 500;
-                    border-radius: 5px;
+                // #booking {
+                //     background-color: #333;
+                //     color: #006aff;
+                //     font-weight: 500;
+                //     border-radius: 5px;
 
-                    &:hover {
-                        color: #ffffff;
-                        background-image: linear-gradient(45deg, #0053c8, #0453c2);
-                    }
-                }
+                //     &:hover {
+                //         color: #ffffff;
+                //         background-image: linear-gradient(45deg, #0053c8, #0453c2);
+                //     }
+                // }
             }
         }
 
