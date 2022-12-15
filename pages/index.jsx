@@ -6,10 +6,50 @@ import Image from 'next/image';
 
 export default function Home() {
   const [isClicked, setIsClicked] = useState('Karaiskakis');
+  const [isPhotoMounted, setPhotoMounted] = useState(false);
+  const [photoNum, setPhotoNum] = useState('');
 
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const Aphoto = () => {
+    setPhotoMounted(true);
+    return (
+      <div className={styles.photo}>
+        <div className={styles.photoTile}></div>
+        <img src={photoNum + '.jpg'}></img>
+        <button type="button" id={styles.close} onClick={() => {
+          setPhotoMounted(false);
+        }}>
+          X
+        </button>
+        <button type="button" id={styles.left} onClick={() => {
+          if (photoNum > 1) {
+            setPhotoNum(photoNum - 1);
+          }
+        }}>
+          <i className="fas fa-chevron-left"></i>
+        </button>
+        <button type="button" id={styles.right} onClick={() => {
+          if (photoNum < 18) {
+            setPhotoNum(photoNum + 1);
+          }
+        }}>
+          <i className="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    )
+  }
+
+  // //useEffect
+  // useEffect(() => {
+  //   if (isPhotoMounted) {
+  //     document.body.style.overflow = 'hidden';
+  //   } else {
+  //     document.body.style.overflow = 'unset';
+  //   }
+  // }, [isPhotoMounted]);
 
   const Amenities = ({ image, title }) => {
     return (
@@ -91,93 +131,83 @@ export default function Home() {
               (Μετέωρα, Μύλος των ξωτικών, Ελάτη, Περτούλι, λίμνη Πλαστήρα, Τρίκαλα ..κτλπ)</p>
           </div>
 
-          <div className={styles.gallery}>
+          <div className={styles.gallery} id={styles.gallery}>
             <div className={styles.galleryCollumn} data-aos="fade-up">
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(1) }}>
                 <img className={styles.image} src="1.jpg" alt="stone_villa_interior_image"></img>
               </a>
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(2) }}>
                 <img className={styles.image} src="2.jpg" alt="stone_villa_interior_image"></img>
               </a>
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(3) }}>
                 <img className={styles.image} src="3.jpg" alt="stone_villa_interior_image"></img>
               </a>
             </div>
 
             <div className={styles.galleryCollumn} data-aos="fade-up">
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(4) }}>
                 <img className={styles.image} src="4.jpg" alt="stone_villa_interior_image"></img>
               </a>
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(5) }}>
                 <img className={styles.image} src="5.jpg" alt="stone_villa_interior_image"></img>
               </a>
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(6) }}>
                 <img className={styles.image} src="6.jpg" alt="stone_villa_interior_image"></img>
               </a>
             </div>
 
             <div className={styles.galleryCollumn} data-aos="fade-up">
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(7) }}>
                 <img className={styles.image} src="7.jpg" alt="stone_villa_interior_image"></img>
               </a>
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(8) }}>
                 <img className={styles.image} src="8.jpg" alt="stone_villa_interior_image"></img>
               </a>
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(9) }}>
                 <img className={styles.image} src="9.jpg" alt="stone_villa_interior_image"></img>
               </a>
             </div>
+          </div>
 
-            {/* <div className={styles.galleryCollumn} data-aos="fade-up">
-              <a href="/" target="_blank">
+          <div className={styles.gallery}>
+            <div className={styles.galleryCollumn} data-aos="fade-up">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(10) }}>
                 <img className={styles.image} src="10.jpg" alt="stone_villa_interior_image"></img>
               </a>
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(11) }}>
                 <img className={styles.image} src="11.jpg" alt="stone_villa_interior_image"></img>
               </a>
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(12) }}>
                 <img className={styles.image} src="12.jpg" alt="stone_villa_interior_image"></img>
               </a>
-            </div> */}
+            </div>
 
-            {/* <div className={styles.galleryCollumn} data-aos="fade-up">
-              <a href="/" target="_blank">
+            <div className={styles.galleryCollumn} data-aos="fade-up">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(13) }}>
                 <img className={styles.image} src="13.jpg" alt="stone_villa_interior_image"></img>
               </a>
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(14) }}>
                 <img className={styles.image} src="14.jpg" alt="stone_villa_interior_image"></img>
               </a>
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(15) }}>
                 <img className={styles.image} src="15.jpg" alt="stone_villa_interior_image"></img>
               </a>
-            </div> */}
+            </div>
 
-            {/* <div className={styles.galleryCollumn} data-aos="fade-up">
-              <a href="/" target="_blank">
+            <div className={styles.galleryCollumn} data-aos="fade-up">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(16) }}>
                 <img className={styles.image} src="16.jpg" alt="stone_villa_interior_image"></img>
               </a>
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(17) }}>
                 <img className={styles.image} src="17.jpg" alt="stone_villa_interior_image"></img>
               </a>
-              <a href="/" target="_blank">
+              <a href="#gallery" onClick={() => { Aphoto(); setPhotoNum(18) }}>
                 <img className={styles.image} src="18.jpg" alt="stone_villa_interior_image"></img>
               </a>
-            </div> */}
-
-            {/* <div className={styles.galleryCollumn} data-aos="fade-up">
-              <a href="/" target="_blank">
-                <img className={styles.image} src="19.jpg" alt="stone_villa_interior_image"></img>
-              </a>
-              <a href="/" target="_blank">
-                <img className={styles.image} src="20.jpg" alt="stone_villa_interior_image"></img>
-              </a>
-              <a href="/" target="_blank">
-                <img className={styles.image} src="21.jpg" alt="stone_villa_interior_image"></img>
-              </a>
-            </div> */}
-
+            </div>
           </div>
-        </div>
+          {isPhotoMounted ? <Aphoto /> : null}
+        </div >
       </section >
       <hr id={styles.lineBreak} data-aos="fade-right" />
       <div className={styles.amenitiesTitle}>
@@ -256,47 +286,47 @@ export default function Home() {
               <div className={styles.roadmapItem}>
                 <p id={styles.time}>12 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p id={styles.karaiskakis} onClick={() => setIsClicked('Karaiskakis')}>Σπήλαιο γέννησης Καραισκάκη</p>
+                <p id={styles.karaiskakis} onClick={() => setIsClicked('Karaiskakis')}><a href="#sideIcon">Σπήλαιο γέννησης Καραισκάκη</a></p>
               </div>
               <hr id={styles.destination1road} />
               <div className={styles.roadmapItem}>
                 <p id={styles.time}>15 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p id={styles.paleokarya} onClick={() => setIsClicked('Arched bridge Paleokarya')}>Καταράκτης - Πέτρινη Γέφυρα Παλαιοκαρυάς</p>
+                <p id={styles.paleokarya} onClick={() => setIsClicked('Arched bridge Paleokarya')}><a href="#sideIcon">Καταράκτης - Πέτρινη Γέφυρα Παλαιοκαρυάς</a></p>
               </div>
               <hr id={styles.destination2road} />
               <div className={styles.roadmapItem}>
                 <p id={styles.time}>20 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p onClick={() => setIsClicked('Elf Mill')}>Τρίκαλα - Μύλος των Ξωτικών</p>
+                <p onClick={() => setIsClicked('Elf Mill')}><a href="#sideIcon">Τρίκαλα - Μύλος των Ξωτικών</a></p>
               </div>
               <hr id={styles.destination3road} />
               <div className={styles.roadmapItem}>
                 <p id={styles.time}>25 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p onClick={() => setIsClicked('Karditsa')}>Καρδίτσα</p> <p id={styles.elati} onClick={() => setIsClicked('Elati')}>- Elati</p>
+                <p onClick={() => setIsClicked('Karditsa')}><a href="#sideIcon">Καρδίτσα</a></p> <p id={styles.elati} onClick={() => setIsClicked('Elati')}><a href="#sideIcon">- Elati</a></p>
               </div>
               <hr id={styles.destination4road} />
               <div className={styles.roadmapItem}>
                 <p id={styles.time}>30 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p id={styles.kalabaka} onClick={() => setIsClicked('Kalabaka')}>Καλαμπάκα - Μετέωρα</p>
+                <p id={styles.kalabaka} onClick={() => setIsClicked('Kalabaka')}><a href="#sideIcon">Καλαμπάκα - Μετέωρα</a></p>
               </div>
               <hr id={styles.destination5road} />
               <div className={styles.roadmapItem}>
                 <p id={styles.time}>40 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p onClick={() => setIsClicked('Pertouli')}>Πέρτουλι</p>
+                <p onClick={() => setIsClicked('Pertouli')}><a href="#sideIcon">Πέρτουλι</a></p>
               </div>
               <hr id={styles.destination6road} />
               <div className={styles.roadmapItem}>
                 <p id={styles.time}>45 λεπτά</p>
                 <div className={styles.destination}></div>
-                <p onClick={() => setIsClicked('Plastira')}>Λίμνη Πλαστήρα</p>
+                <p onClick={() => setIsClicked('Plastira')}><a href="#sideIcon">Λίμνη Πλαστήρα</a></p>
               </div>
             </div>
           </div>
-          <div className={styles.sideIconContainer} data-aos="fade-left" data-aos-duration="1000">
+          <div className={styles.sideIconContainer} id="sideIcon" data-aos="fade-left" data-aos-duration="1000">
             {ChangeImage()}
           </div>
         </div>
