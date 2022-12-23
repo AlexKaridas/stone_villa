@@ -12,12 +12,12 @@ const Header = () => {
     const [weatherData, setData] = useState();
 
     useEffect(() => {
-        setMounted(true)
         //*hook that returns current weather data
         useWeather()
             .then(function (data) {
                 setData(data);
             })
+        setMounted(true)
     }, []);
     // console.log(data);
 
