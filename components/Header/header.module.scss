@@ -42,6 +42,33 @@ div.nav {
         padding-left: 2em;
         width: 50%;
 
+        #weather {
+            text-decoration: none;
+
+            h4 {
+
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 0px;
+                    width: 0;
+                    background-color: #ac6015;
+                    transition: 0.2s;
+                }
+
+                &:hover {
+                    color: #ffffff;
+
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
         li {
             display: flex;
             align-items: center;
@@ -57,6 +84,7 @@ div.nav {
                 display: inline-block;
                 overflow: hidden;
                 transition: 0.5s;
+                display: flex;
 
                 &:after {
                     content: "";
@@ -76,6 +104,12 @@ div.nav {
                         width: 100%;
                     }
                 }
+            }
+
+            img {
+                margin-top: 4px;
+                width: 2vw;
+                height: auto;
             }
 
             a {
@@ -144,6 +178,16 @@ div.nav {
             align-items: center;
             padding-left: 2em;
             width: 50%;
+
+            #weather {
+                display: flex;
+                white-space: nowrap;
+
+                h4 {
+                    display: flex;
+                }
+
+            }
 
             li {
                 display: flex;

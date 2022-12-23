@@ -42,15 +42,6 @@ export default function Home() {
     )
   }
 
-  // //useEffect
-  // useEffect(() => {
-  //   if (isPhotoMounted) {
-  //     document.body.style.overflow = 'hidden';
-  //   } else {
-  //     document.body.style.overflow = 'unset';
-  //   }
-  // }, [isPhotoMounted]);
-
   const Amenities = ({ image, title }) => {
     return (
       <div className={styles.amenitiesIcons}>
