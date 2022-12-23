@@ -9,7 +9,7 @@ const Header = () => {
     const [mounted, setMounted] = useState(false);
     const { theme, setTheme } = useTheme("");
     //*weather data
-    const [data, setData] = useState();
+    const [weatherData, setData] = useState();
 
     useEffect(() => {
         setMounted(true)
@@ -21,10 +21,10 @@ const Header = () => {
     }, []);
     // console.log(data);
 
-    let weather = data?.weather ? data.weather[0].description : null;
+    let weath = weatherData?.weather ? weatherData.weather[0].description : null;
 
     //*temperature in kelvin initializer
-    let temp = data?.main ? data.main.temp : null;
+    let temp = weatherData?.main ? weatherData.main.temp : null;
     // console.log('farenheit= ', temp)
 
     //*function that converts kelvin to celcius
@@ -36,7 +36,7 @@ const Header = () => {
 
     //*function that shows icon according to weather
     const showIcon = () => {
-        let icon = data?.weather ? data.weather[0].icon : null;
+        let icon = weatherData?.weather ? weatherData.weather[0].icon : null;
         return (<img src={`http://openweathermap.org/img/w/${icon}.png`} alt="weather icon"></img>);
     }
 
@@ -60,7 +60,7 @@ const Header = () => {
                 </li>
             </ul>
             <ul id={styles.secondList} className={styles.navList}>
-                <li id={styles.weather}><h4>{weather}</h4><h4>{convertToCelcius()}°C</h4><p>{showIcon()}</p></li>
+                <li id={styles.weather}><h4>{weath}</h4><h4>{convertToCelcius()}°C</h4><p>{showIcon()}</p></li>
                 <li>
                     <Link href="/contact"><h4>Contact</h4></Link>
                 </li>
