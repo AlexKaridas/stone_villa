@@ -14,4 +14,13 @@ export default async function useWeather() {
         console.error(err);
         throw err;
     }
+    // axios.get(urlweather)
+    //     .then(function (response) {
+    //         return response.data;
+    //     }
+    //     )
+    //     .catch(function (error) {
+    //         console.log(error);
+    //     }
+    //     )
 }
