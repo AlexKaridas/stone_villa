@@ -594,6 +594,7 @@ div.main {
 
 }
 
+//?big screens unnessesary
 // @media only screen and (max-width: 1563px) {
 //     div.main {
 //         section.landing {
@@ -781,7 +782,7 @@ div.main {
 // }
 
 
-//pc latop
+//!pc latop
 @media only screen and (max-width: 1314px) {
     div.main {
         section.landing {
@@ -1269,7 +1270,7 @@ div.main {
 
 }
 
-//tablet
+//!tablet
 @media only screen and (max-width: 768px) {
     div.main {
         section.landing {
@@ -1762,7 +1763,7 @@ div.main {
     }
 }
 
-//smartphones
+//!smartphones
 @media only screen and (max-width: 480px) {
     div.main {
 
@@ -1815,7 +1816,7 @@ div.main {
                     position: relative;
                     font-size: 6vw;
                     font-weight: 500;
-                    white-space: nowrap;
+                    white-space: normal;
                     padding-left: 0px;
                     margin-top: 0px;
                     margin-bottom: 50px;
