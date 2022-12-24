@@ -22,22 +22,18 @@ div.main {
 
         div.landing_image {
             position: relative;
-            background-image: url('/stone_villa2.jpg');
-            width: 80vw;
+            background-image: url('https://scontent.fath6-1.fna.fbcdn.net/v/t1.15752-9/320631436_604470434817180_3070147978678487761_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=W9Eier1QahAAX8lZN2-&_nc_ht=scontent.fath6-1.fna&oh=03_AdTzzEpiFH1eywupqanQm2qU5O0tusQ1qwhSE3GMZxf-5A&oe=63CEC64A');
+            width: 50%;
             height: 45vw;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            margin-left: 38vw;
         }
 
         div.landingText {
-            position: absolute;
-            top: 35%;
-            left: 0;
-            width: 44vw;
+            position: relative;
+            width: 50%;
             text-align: left;
-            z-index: 2;
 
             h1.title {
                 position: relative;
@@ -61,7 +57,7 @@ div.main {
                 position: relative;
                 text-align: start;
                 padding-top: 80px;
-                font-size: 1vw;
+                font-size: 1.2vw;
                 font-weight: 500;
                 width: 30vw;
             }
@@ -69,11 +65,11 @@ div.main {
 
         #bookButton {
             position: absolute;
-            top: 69%;
+            top: 90%;
             left: 0%;
-            height: 2.3vw;
-            width: 7vw;
-            font-size: 0.75vw;
+            height: 2.5vw;
+            width: 10vw;
+            font-size: 1vw;
             padding: right 4px;
             padding-left: 4px;
             background-color: #ffffff;
@@ -96,18 +92,18 @@ div.main {
 
         #arrow {
             position: absolute;
-            bottom: 5vw;
+            bottom: 0vh;
             left: 20vw;
             transform: rotate(-180deg);
-            width: 100px;
+            width: 80px;
             filter: invert(36%) sepia(88%) saturate(478%) hue-rotate(349deg) brightness(95%) contrast(94%);
         }
 
         #quote {
             position: absolute;
             left: 1vw;
-            top: 7vw;
-            width: 100px;
+            top: 2vw;
+            width: 70px;
             filter: invert(36%) sepia(88%) saturate(478%) hue-rotate(349deg) brightness(95%) contrast(94%);
         }
     }
@@ -146,8 +142,6 @@ div.main {
                 align-items: center;
                 justify-content: center;
                 transition: 0.3s ease-in-out;
-                // opacity: 0;
-                // visibility: hidden;
 
                 img {
                     object-fit: cover;
@@ -600,138 +594,191 @@ div.main {
 
 }
 
-// //pc
-@media only screen and (max-width: 1563px) {
-    div.main {
-        section.GuestAccess {
+// @media only screen and (max-width: 1563px) {
+//     div.main {
+//         section.landing {
+//             width: 100%;
+
+//             #bookButton {
+//                 position: absolute;
+//                 bottom: 0;
+//                 margin: 0;
+//                 left: 0;
+//                 top: 600px;
+//             }
+
+//             #quote {
+//                 top: 20px;
+//                 width: 70px;
+//             }
+
+//             #arrow {
+//                 bottom: 0px;
+//                 left: 400px;
+//                 width: 70px;
+//             }
+
+//             div.landing_image {
+//                 position: relative;
+//                 width: 50%;
+//                 padding: 0;
+//                 margin: 0;
+//             }
+
+//             div.landingText {
+//                 position: relative;
+//                 width: 50%;
+
+//                 div.title {
+//                     position: relative;
+//                     width: 100%;
+//                     white-space: normal;
+//                     padding: 0;
+//                     margin: 0;
+
+//                     h1 {
+//                         width: 100%;
+//                         white-space: normal;
+//                         margin: 0;
+//                     }
+//                 }
+
+//                 p {
+//                     width: 80%;
+//                     font-size: larger;
+//                 }
+//             }
+//         }
+
+//         section.GuestAccess {
 
 
-            div.GuestAccessContainer {
-                display: flex;
-                flex-direction: column;
+//             div.GuestAccessContainer {
+//                 display: flex;
+//                 flex-direction: column;
 
-                div.roadmapContainer {
-                    margin: 0;
-                    width: 100%;
-                    margin-bottom: 100px;
+//                 div.roadmapContainer {
+//                     margin: 0;
+//                     width: 100%;
+//                     margin-bottom: 100px;
 
-                    div.roadmap {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
+//                     div.roadmap {
+//                         display: flex;
+//                         flex-direction: column;
+//                         align-items: center;
+//                         justify-content: center;
 
-                        div.roadmapItem {
-                            position: relative;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 400px;
-                            margin-bottom: 2px;
+//                         div.roadmapItem {
+//                             position: relative;
+//                             display: flex;
+//                             align-items: center;
+//                             justify-content: center;
+//                             width: 400px;
+//                             margin-bottom: 2px;
 
-                            div.destination {
-                                height: 25px;
-                                width: 25px;
-                                background-color: #ac6015;
-                                border-radius: 50%;
-                                display: inline-block;
-                            }
+//                             div.destination {
+//                                 height: 25px;
+//                                 width: 25px;
+//                                 background-color: #ac6015;
+//                                 border-radius: 50%;
+//                                 display: inline-block;
+//                             }
 
-                            p {
-                                left: 220px;
-                                position: absolute;
-                                right: 0px;
-                                font-size: 1.1vw;
-                                font-weight: 400;
-                                padding-left: 10px;
-                                padding-right: 10px;
-                                white-space: nowrap;
-                                transition: 0.1s ease-in-out;
+//                             p {
+//                                 left: 220px;
+//                                 position: absolute;
+//                                 right: 0px;
+//                                 font-size: 1.1vw;
+//                                 font-weight: 400;
+//                                 padding-left: 10px;
+//                                 padding-right: 10px;
+//                                 white-space: nowrap;
+//                                 transition: 0.1s ease-in-out;
 
 
-                                &:hover {
-                                    cursor: pointer;
-                                    transform: translate(3px, -3px);
+//                                 &:hover {
+//                                     cursor: pointer;
+//                                     transform: translate(3px, -3px);
 
-                                }
-                            }
+//                                 }
+//                             }
 
-                            #time {
-                                position: absolute;
-                                font-size: 1.1vw;
-                                font-weight: 400;
-                                white-space: nowrap;
-                                left: 10px;
+//                             #time {
+//                                 position: absolute;
+//                                 font-size: 1.1vw;
+//                                 font-weight: 400;
+//                                 white-space: nowrap;
+//                                 left: 10px;
 
-                                &:hover {
-                                    cursor: text;
-                                    transform: translate(0px, 0px);
-                                }
-                            }
-                        }
+//                                 &:hover {
+//                                     cursor: text;
+//                                     transform: translate(0px, 0px);
+//                                 }
+//                             }
+//                         }
 
-                        #elati {
-                            left: 300px;
-                        }
+//                         #elati {
+//                             left: 300px;
+//                         }
 
-                        #destination1road {
-                            width: 1px;
-                            height: 100px;
-                            border: 1px solid;
-                            border-color: var(--foreground);
-                        }
+//                         #destination1road {
+//                             width: 1px;
+//                             height: 100px;
+//                             border: 1px solid;
+//                             border-color: var(--foreground);
+//                         }
 
-                        #destination2road {
-                            width: 1px;
-                            height: 120px;
-                            border: 1px solid;
-                            border-color: var(--foreground);
-                        }
+//                         #destination2road {
+//                             width: 1px;
+//                             height: 120px;
+//                             border: 1px solid;
+//                             border-color: var(--foreground);
+//                         }
 
-                        #destination3road {
-                            width: 1px;
-                            height: 125px;
-                            border: 1px solid;
-                            border-color: var(--foreground);
-                        }
+//                         #destination3road {
+//                             width: 1px;
+//                             height: 125px;
+//                             border: 1px solid;
+//                             border-color: var(--foreground);
+//                         }
 
-                        #destination4road {
-                            width: 1px;
-                            height: 130px;
-                            border: 1px solid;
-                            border-color: var(--foreground);
-                        }
+//                         #destination4road {
+//                             width: 1px;
+//                             height: 130px;
+//                             border: 1px solid;
+//                             border-color: var(--foreground);
+//                         }
 
-                        #destination5road {
-                            width: 1px;
-                            height: 140px;
-                            border: 1px solid;
-                            border-color: var(--foreground);
-                        }
+//                         #destination5road {
+//                             width: 1px;
+//                             height: 140px;
+//                             border: 1px solid;
+//                             border-color: var(--foreground);
+//                         }
 
-                        #destination6road {
-                            width: 1px;
-                            height: 150px;
-                            border: 1px solid;
-                            border-color: var(--foreground);
-                        }
-                    }
-                }
-            }
+//                         #destination6road {
+//                             width: 1px;
+//                             height: 150px;
+//                             border: 1px solid;
+//                             border-color: var(--foreground);
+//                         }
+//                     }
+//                 }
+//             }
 
-            div.sideIconContainer {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+//             div.sideIconContainer {
+//                 width: 100%;
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
 
-                div.sideIcon {
-                    width: 70%;
-                }
-            }
-        }
-    }
-}
+//                 div.sideIcon {
+//                     width: 70%;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 
 //pc latop
@@ -747,7 +794,6 @@ div.main {
                 width: 50%;
                 margin: 0;
                 position: relative;
-                background-image: url('/stone_villa2.jpg');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
@@ -764,18 +810,15 @@ div.main {
 
                 h1.title {
                     position: relative;
-                    font-size: 3vw;
+                    font-size: 2.7vw;
                     color: var(--foreground);
                     font-weight: 400;
-                    white-space: nowrap;
-                    padding-left: 14px;
-                    z-index: 0;
                 }
 
                 p {
                     z-index: 0;
                     position: relative;
-                    font-size: 1.5vw;
+                    font-size: 1.2vw;
                     color: var(--foreground);
                     font-weight: 500;
                     padding-left: 14px;
@@ -785,11 +828,11 @@ div.main {
 
             #bookButton {
                 position: absolute;
-                top: 80%;
+                top: 90%;
                 left: 2%;
                 height: 4vw;
-                width: 10vw;
-                font-size: 1.2vw;
+                width: 8vw;
+                font-size: 1vw;
                 background-color: #ffffff;
                 color: #ac6015;
                 font-weight: 700;
@@ -813,15 +856,15 @@ div.main {
                 bottom: 0vw;
                 left: 25vw;
                 transform: rotate(-180deg);
-                width: 100px;
+                width: 70px;
                 filter: invert(36%) sepia(88%) saturate(478%) hue-rotate(349deg) brightness(95%) contrast(94%);
             }
 
             #quote {
                 position: absolute;
                 left: 3vw;
-                top: 0vw;
-                width: 80px;
+                top: 3vw;
+                width: 60px;
                 filter: invert(36%) sepia(88%) saturate(478%) hue-rotate(349deg) brightness(95%) contrast(94%);
             }
         }
@@ -1241,16 +1284,16 @@ div.main {
 
             div.landing_image {
                 position: relative;
-                background-image: url('/stone_villa2.jpg');
                 width: 100%;
-                height: 300px;
+                height: 490px;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
             }
 
             div.landingText {
-                width: 80%;
+                width: 100%;
+                height: 50%;
                 position: relative;
                 display: flex;
                 justify-content: center;
@@ -1266,8 +1309,6 @@ div.main {
                     font-weight: 500;
                     white-space: nowrap;
                     padding-left: 0px;
-                    margin-top: 50px;
-                    margin-bottom: 50px;
                 }
 
                 div.lineText {
@@ -1291,7 +1332,7 @@ div.main {
                     text-align: justify;
                     margin: 0;
                     height: 20vw;
-                    padding: 0px 0px 0px 0px;
+                    padding: 20px 0px 0px 0px;
                     background-color: inherit;
                     color: var(--foreground);
                 }
@@ -1316,7 +1357,7 @@ div.main {
                 align-items: center;
                 justify-content: center;
                 transition: 0.3s;
-                margin-top: 0px;
+                margin-top: 20px;
                 margin-bottom: 40px;
             }
 
@@ -1333,9 +1374,9 @@ div.main {
             #quote {
                 display: inline-block;
                 position: absolute;
-                left: 9vw;
-                top: 10vw;
-                width: 80px;
+                left: 5vw;
+                top: 0vh;
+                width: 60px;
                 filter: invert(36%) sepia(88%) saturate(478%) hue-rotate(349deg) brightness(95%) contrast(94%);
             }
         }
@@ -1751,7 +1792,7 @@ div.main {
 
             div.landing_image {
                 position: relative;
-                background-image: url('/stone_villa2.jpg');
+                margin-top: 30px;
                 width: 100%;
                 height: 300px;
                 background-repeat: no-repeat;
@@ -1802,17 +1843,16 @@ div.main {
                     text-align: justify;
                     margin: 0;
                     height: 20vw;
-                    padding: 0px 20px 0px 20px;
+                    padding: 20px 20px 20px 20px;
                     background-color: inherit;
                 }
 
             }
 
             #bookButton {
-                display: none;
                 position: relative;
-                height: 50px;
-                width: 70%;
+                height: 40px;
+                width: 50%;
                 font-size: 3.5vw;
                 padding: right 0px;
                 padding-left: 0px;
@@ -1826,8 +1866,8 @@ div.main {
                 align-items: center;
                 justify-content: center;
                 transition: 0.3s;
-                margin-top: 40px;
-                margin-bottom: 40px;
+                margin-top: 150px;
+                margin-bottom: 0px;
             }
 
 
@@ -2329,12 +2369,6 @@ div.main {
                 color: #ac6015;
                 border: 1px solid #ac6015;
             }
-        }
-
-        div.landingText {
-            // color: var(--foreground);
-            // background-color: var(--background);
-
         }
     }
 

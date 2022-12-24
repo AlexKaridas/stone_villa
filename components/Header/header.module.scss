@@ -12,6 +12,7 @@ div.nav {
     justify-content: space-between;
 
     #secondList {
+        align-items: center;
         justify-content: flex-end;
     }
 
@@ -43,11 +44,15 @@ div.nav {
         width: 50%;
 
         #weather {
+            display: flex;
+            white-space: nowrap;
+            align-items: center;
             text-decoration: none;
+            padding-bottom: 0;
+            padding-top: 0;
+            margin-top: 0;
 
             h4 {
-
-
                 &:after {
                     content: "";
                     position: absolute;
@@ -156,7 +161,6 @@ div.nav {
             position: relative;
             width: 30px;
             height: 30px;
-            // background-color: var(--foreground);
         }
 
         #nightMountain {
@@ -182,12 +186,18 @@ div.nav {
             #weather {
                 display: flex;
                 white-space: nowrap;
+                align-items: center;
 
                 h4 {
                     display: flex;
+                    align-items: center;
                 }
 
             }
+
+
+
+
 
             li {
                 display: flex;
@@ -197,6 +207,9 @@ div.nav {
 
                 h4 {
                     position: relative;
+                    display: flex;
+                    align-items: center;
+
                     font-size: 1.5vw;
                     font-weight: 500;
                     padding-right: 1em;

@@ -10,13 +10,13 @@ const Header = () => {
     const { theme, setTheme } = useTheme("");
     //*weather data
     const [weatherData, setData] = useState();
+    //*hook that returns current weather data
 
-    useWeather()
-        .then(function (data) {
-            setData(data);
-        })
     useEffect(() => {
-        //*hook that returns current weather data
+        useWeather()
+            .then(function (data) {
+                setData(data);
+            })
         setMounted(true)
     }, []);
     // console.log(data);

@@ -100,9 +100,11 @@ export default function Home() {
           <div className={styles.title}>
             <h1 className={styles.title} data-aos="fade-right" data-aos-duration="1000">
               <div className={styles.lineText} data-aos="fade-right" data-aos-duration="1000"></div>
-              Welcome to Stone Villa Mouzaki!</h1>
+              Καλώς ήρθατε στην πέτρινη βίλα του Μουζακίου</h1>
           </div>
-          <p data-aos="fade-right" data-aos-duration="1000">Αυτή η πέτρινη βίλα μουζακίου βρίσκεται στο Μουζάκι, σε απόσταση σαραντα έξι χιλιόμετρα από τα Μετέωρα, και προσφέρει κήπο, δωρεάν wifi και εικοσιτετράωρη ρεσεψιόν. Το κατάλυμα προσφέρει μπαλκόνι και θέα στον κήπο.</p>
+          <p data-aos="fade-right" data-aos-duration="1000">Πολυτελές, παραδοσιακό, ιστορικό αρχοντικό στο Μουζακι , κοντά στην Ελάτη και στο Περτουλι , η πέτρινη βίλα  προσφέρει άριστη φιλοξενία και αποτελεί ιδανική επιλογή όλες τις εποχές του χρόνου για οικογένειες, παρέες φίλων αλλα και για  φυσιολάτρες.
+            Πετρόχτιστο και κρυμμένο από τα γύρο σπίτια το αρχοντικό είναι ένας μοναδικός προορισμός για ξεκούραση ή για απόδραση στη φύση.
+            Ανυπομονούμε να σας γνωρίσουμε.</p>
         </div>
         <Link href="/contact" id={styles.bookButton} data-aos="fade-right" data-aos-duration="1000"><p>Book Your Stay</p></Link>
         <img src="/arrow.png" alt="arrow icon" id={styles.arrow} data-aos="fade-right" data-aos-duration="1000"></img>
