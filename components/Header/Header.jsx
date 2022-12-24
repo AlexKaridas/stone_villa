@@ -16,11 +16,11 @@ const Header = () => {
         //     .then(function (data) {
         //         setData(data);
         //     })
-        const func = async () => {
+        const Func = async () => {
             const data = await useWeather();
             setData(data);
         }
-        func();
+        Func();
         setMounted(true)
     }, []);
     // console.log(data);
