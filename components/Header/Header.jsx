@@ -9,40 +9,40 @@ const Header = () => {
     const [mounted, setMounted] = useState(false);
     const { theme, setTheme } = useTheme("");
     //*weather data
-    const [weatherData, setData] = useState();
+    // const [weatherData, setData] = useState();
     //*hook that returns current weather data
     useEffect(() => {
         // useWeather()
         //     .then(function (data) {
         //         setData(data);
         //     })
-        const Func = async () => {
-            const data = await useWeather();
-            setData(data);
-        }
-        Func();
+        // const Func = async () => {
+        //     const data = await useWeather();
+        //     setData(data);
+        // }
+        // Func();
         setMounted(true)
     }, []);
     // console.log(data);
 
-    let weath = weatherData?.weather ? weatherData.weather[0].description : null;
+    // let weath = weatherData?.weather ? weatherData.weather[0].description : null;
 
     //*temperature in kelvin initializer
-    let temp = weatherData?.main ? weatherData.main.temp : null;
+    // let temp = weatherData?.main ? weatherData.main.temp : null;
     // console.log('farenheit= ', temp)
 
     //*function that converts kelvin to celcius
-    const convertToCelcius = () => {
-        let CelciusNum = temp - 273.15;
-        let Celcius = CelciusNum.toFixed(0);
-        return (<div>{Celcius}</div>);
-    }
+    // const convertToCelcius = () => {
+    //     let CelciusNum = temp - 273.15;
+    //     let Celcius = CelciusNum.toFixed(0);
+    //     return (<div>{Celcius}</div>);
+    // }
 
     //*function that shows icon according to weather
-    const showIcon = () => {
-        let icon = weatherData?.weather ? weatherData.weather[0].icon : null;
-        return (<img src={`http://openweathermap.org/img/w/${icon}.png`} alt="weather icon"></img>);
-    }
+    // const showIcon = () => {
+    //     let icon = weatherData?.weather ? weatherData.weather[0].icon : null;
+    //     return (<img src={`http://openweathermap.org/img/w/${icon}.png`} alt="weather icon"></img>);
+    // }
 
 
     //*dark mode
@@ -64,7 +64,7 @@ const Header = () => {
                 </li>
             </ul>
             <ul id={styles.secondList} className={styles.navList}>
-                <li id={styles.weather}><h4>{weath}</h4><h4>{convertToCelcius()}°C</h4><p>{showIcon()}</p></li>
+                {/* <li id={styles.weather}><h4>{weath}</h4><h4>{convertToCelcius()}°C</h4><p>{showIcon()}</p></li> */}
                 <li>
                     <Link href="/contact"><h4>Contact</h4></Link>
                 </li>
