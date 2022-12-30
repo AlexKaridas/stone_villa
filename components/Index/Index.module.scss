@@ -595,191 +595,191 @@ div.main {
 }
 
 //?big screens unnessesary
-// @media only screen and (max-width: 1563px) {
-//     div.main {
-//         section.landing {
-//             width: 100%;
+@media only screen and (max-width: 1563px) {
+    div.main {
+        section.landing {
+            width: 100%;
 
-//             #bookButton {
-//                 position: absolute;
-//                 bottom: 0;
-//                 margin: 0;
-//                 left: 0;
-//                 top: 600px;
-//             }
+            #bookButton {
+                position: absolute;
+                bottom: 0;
+                margin: 0;
+                left: 0;
+                top: 600px;
+            }
 
-//             #quote {
-//                 top: 20px;
-//                 width: 70px;
-//             }
+            #quote {
+                top: 20px;
+                width: 70px;
+            }
 
-//             #arrow {
-//                 bottom: 0px;
-//                 left: 400px;
-//                 width: 70px;
-//             }
+            #arrow {
+                bottom: 0px;
+                left: 400px;
+                width: 70px;
+            }
 
-//             div.landing_image {
-//                 position: relative;
-//                 width: 50%;
-//                 padding: 0;
-//                 margin: 0;
-//             }
+            div.landing_image {
+                position: relative;
+                width: 50%;
+                padding: 0;
+                margin: 0;
+            }
 
-//             div.landingText {
-//                 position: relative;
-//                 width: 50%;
+            div.landingText {
+                position: relative;
+                width: 50%;
 
-//                 div.title {
-//                     position: relative;
-//                     width: 100%;
-//                     white-space: normal;
-//                     padding: 0;
-//                     margin: 0;
+                div.title {
+                    position: relative;
+                    width: 100%;
+                    white-space: normal;
+                    padding: 0;
+                    margin: 0;
 
-//                     h1 {
-//                         width: 100%;
-//                         white-space: normal;
-//                         margin: 0;
-//                     }
-//                 }
+                    h1 {
+                        width: 100%;
+                        white-space: normal;
+                        margin: 0;
+                    }
+                }
 
-//                 p {
-//                     width: 80%;
-//                     font-size: larger;
-//                 }
-//             }
-//         }
+                p {
+                    width: 80%;
+                    font-size: larger;
+                }
+            }
+        }
 
-//         section.GuestAccess {
-
-
-//             div.GuestAccessContainer {
-//                 display: flex;
-//                 flex-direction: column;
-
-//                 div.roadmapContainer {
-//                     margin: 0;
-//                     width: 100%;
-//                     margin-bottom: 100px;
-
-//                     div.roadmap {
-//                         display: flex;
-//                         flex-direction: column;
-//                         align-items: center;
-//                         justify-content: center;
-
-//                         div.roadmapItem {
-//                             position: relative;
-//                             display: flex;
-//                             align-items: center;
-//                             justify-content: center;
-//                             width: 400px;
-//                             margin-bottom: 2px;
-
-//                             div.destination {
-//                                 height: 25px;
-//                                 width: 25px;
-//                                 background-color: #ac6015;
-//                                 border-radius: 50%;
-//                                 display: inline-block;
-//                             }
-
-//                             p {
-//                                 left: 220px;
-//                                 position: absolute;
-//                                 right: 0px;
-//                                 font-size: 1.1vw;
-//                                 font-weight: 400;
-//                                 padding-left: 10px;
-//                                 padding-right: 10px;
-//                                 white-space: nowrap;
-//                                 transition: 0.1s ease-in-out;
+        section.GuestAccess {
 
 
-//                                 &:hover {
-//                                     cursor: pointer;
-//                                     transform: translate(3px, -3px);
+            div.GuestAccessContainer {
+                display: flex;
+                flex-direction: column;
 
-//                                 }
-//                             }
+                div.roadmapContainer {
+                    margin: 0;
+                    width: 100%;
+                    margin-bottom: 100px;
 
-//                             #time {
-//                                 position: absolute;
-//                                 font-size: 1.1vw;
-//                                 font-weight: 400;
-//                                 white-space: nowrap;
-//                                 left: 10px;
+                    div.roadmap {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
 
-//                                 &:hover {
-//                                     cursor: text;
-//                                     transform: translate(0px, 0px);
-//                                 }
-//                             }
-//                         }
+                        div.roadmapItem {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 400px;
+                            margin-bottom: 2px;
 
-//                         #elati {
-//                             left: 300px;
-//                         }
+                            div.destination {
+                                height: 25px;
+                                width: 25px;
+                                background-color: #ac6015;
+                                border-radius: 50%;
+                                display: inline-block;
+                            }
 
-//                         #destination1road {
-//                             width: 1px;
-//                             height: 100px;
-//                             border: 1px solid;
-//                             border-color: var(--foreground);
-//                         }
+                            p {
+                                left: 220px;
+                                position: absolute;
+                                right: 0px;
+                                font-size: 1.1vw;
+                                font-weight: 400;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                white-space: nowrap;
+                                transition: 0.1s ease-in-out;
 
-//                         #destination2road {
-//                             width: 1px;
-//                             height: 120px;
-//                             border: 1px solid;
-//                             border-color: var(--foreground);
-//                         }
 
-//                         #destination3road {
-//                             width: 1px;
-//                             height: 125px;
-//                             border: 1px solid;
-//                             border-color: var(--foreground);
-//                         }
+                                &:hover {
+                                    cursor: pointer;
+                                    transform: translate(3px, -3px);
 
-//                         #destination4road {
-//                             width: 1px;
-//                             height: 130px;
-//                             border: 1px solid;
-//                             border-color: var(--foreground);
-//                         }
+                                }
+                            }
 
-//                         #destination5road {
-//                             width: 1px;
-//                             height: 140px;
-//                             border: 1px solid;
-//                             border-color: var(--foreground);
-//                         }
+                            #time {
+                                position: absolute;
+                                font-size: 1.1vw;
+                                font-weight: 400;
+                                white-space: nowrap;
+                                left: 10px;
 
-//                         #destination6road {
-//                             width: 1px;
-//                             height: 150px;
-//                             border: 1px solid;
-//                             border-color: var(--foreground);
-//                         }
-//                     }
-//                 }
-//             }
+                                &:hover {
+                                    cursor: text;
+                                    transform: translate(0px, 0px);
+                                }
+                            }
+                        }
 
-//             div.sideIconContainer {
-//                 width: 100%;
-//                 display: flex;
-//                 align-items: center;
-//                 justify-content: center;
+                        #elati {
+                            left: 300px;
+                        }
 
-//                 div.sideIcon {
-//                     width: 70%;
-//                 }
-//             }
-//         }
-//     }
-// }
+                        #destination1road {
+                            width: 1px;
+                            height: 100px;
+                            border: 1px solid;
+                            border-color: var(--foreground);
+                        }
+
+                        #destination2road {
+                            width: 1px;
+                            height: 120px;
+                            border: 1px solid;
+                            border-color: var(--foreground);
+                        }
+
+                        #destination3road {
+                            width: 1px;
+                            height: 125px;
+                            border: 1px solid;
+                            border-color: var(--foreground);
+                        }
+
+                        #destination4road {
+                            width: 1px;
+                            height: 130px;
+                            border: 1px solid;
+                            border-color: var(--foreground);
+                        }
+
+                        #destination5road {
+                            width: 1px;
+                            height: 140px;
+                            border: 1px solid;
+                            border-color: var(--foreground);
+                        }
+
+                        #destination6road {
+                            width: 1px;
+                            height: 150px;
+                            border: 1px solid;
+                            border-color: var(--foreground);
+                        }
+                    }
+                }
+            }
+
+            div.sideIconContainer {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                div.sideIcon {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
 
 
 //!pc latop
