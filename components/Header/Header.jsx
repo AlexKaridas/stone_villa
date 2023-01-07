@@ -3,7 +3,6 @@ import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import styles from './header.module.scss';
 import Link from 'next/link';
-import useWeather from '../hooks/useWeather';
 
 const Header = () => {
     const [mounted, setMounted] = useState(false);

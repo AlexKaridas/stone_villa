@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../components/History/history.module.scss'
 import { useState } from 'react';
 
-const history = () => {
+const History = () => {
 
     const [image, setImage] = useState(null);
     const nextImg = () => {
@@ -63,4 +63,4 @@ const history = () => {
     )
 }
 
-export default history
+export default History
