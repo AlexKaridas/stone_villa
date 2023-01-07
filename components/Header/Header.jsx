@@ -31,7 +31,6 @@ const Header = () => {
                 </li>
             </ul>
             <ul id={styles.secondList} className={styles.navList}>
-                {/* <li id={styles.weather}><h4>{weath}</h4><h4>{convertToCelcius()}°C</h4><p>{showIcon()}</p></li> */}
                 <li>
                     <Link href="/contact"><h4>Contact</h4></Link>
                 </li>

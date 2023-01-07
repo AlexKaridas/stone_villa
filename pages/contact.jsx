@@ -1,6 +1,21 @@
 import styles from '../components/Contact/Contact.module.scss';
 
 const Contact = () => {
+
+    //email js
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_1x9x9x9', 'template_1x9x9x9', e.target, 'user_1x9x9x9')
+
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset()
+    }
+
+
     return (
         <div className={styles.container}>
             <h1>Get in touch</h1>
@@ -8,6 +23,7 @@ const Contact = () => {
                 <div className={styles.social}>
                     <h2>The Host</h2>
                     <div className={styles.profile}></div>
+                    <h2>Panagiotis Besios</h2>
                     <div className={styles.socialComponents}>
                         <a href="https://www.airbnb.com/rooms/51678097?source_impression_id=p3_1670292638_VO7LUykuncm99jdp" target="_blank" rel="noreferrer" id={styles.airbnb}><i className="fa-brands fa-airbnb"></i><p>AirBnb</p></a>
                         <a href="https://www.instagram.com/stonevillamouzaki/" target="_blank" rel="noreferrer" id={styles.insta}><i className="fa-brands fa-instagram"></i>Instagram</a>

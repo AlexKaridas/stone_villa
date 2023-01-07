@@ -271,7 +271,7 @@ export default function Home() {
         </div>
         <div className={styles.subtitleContainer}>
           <p>Απόσταση από αξιοθέατα</p>
-          <p>Επιλέξτε τοποθεσία</p>
+          <p>Click πάνω σε μια τοποθεσία για εμφάνιση περισσότερων</p>
         </div>
         <div className={styles.GuestAccessContainer}>
           <div className={styles.roadmapContainer} data-aos="fade-right" data-aos-duration="1000">
