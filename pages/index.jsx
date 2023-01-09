@@ -80,7 +80,7 @@ export default function Home() {
       case 'Karditsa':
         return <Landmarks landmarkPicture="https://i.ytimg.com/vi/sjrWQemZ9u8/maxresdefault.jpg" landmarkTitle="Karditsa" landmarkLink="https://www.google.com/maps/dir/39.4331761,21.6626941/Karditsa/@39.4105822,21.7496772,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x1358d90f2ecd1d7b:0x5e3be538443e1f7e!2m2!1d21.9214049!2d39.3640258!3e0" mapdata="/karditsa.png" />
       case 'Elati':
-        return <Landmarks landmarkPicture="https://patakistravel.gr/wp-content/uploads/2018/10/metsovo.jpg" landmarkTitle="Elati" landmarkLink="https://www.google.com/maps/dir/39.4331761,21.6626941/Elati/@39.4692765,21.5640989,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x13593eefe49f522f:0x500bd2ce2bb3200!2m2!1d21.5351193!2d39.504302!3e0" mapdata="/elati.png" />
+        return <Landmarks landmarkPicture="https://trikkipress.gr/wp-content/uploads/2015/04/elati.jpg" landmarkTitle="Elati" landmarkLink="https://www.google.com/maps/dir/39.4331761,21.6626941/Elati/@39.4692765,21.5640989,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x13593eefe49f522f:0x500bd2ce2bb3200!2m2!1d21.5351193!2d39.504302!3e0" mapdata="/elati.png" />
       case 'Kalabaka':
         return <Landmarks landmarkPicture="https://www.kathimerini.gr/wp-content/uploads/2020/07/meteora-768x480.jpg" landmarkTitle="Kalabaka" landmarkLink="https://www.google.com/maps/dir/39.4331761,21.6626941/Kalambaka/@39.5791336,21.6341765,11.55z/data=!4m9!4m8!1m0!1m5!1m1!1s0x13590fcfb5752c79:0xc0a360035a1f5ffa!2m2!1d21.6288728!2d39.706618!3e0" mapdata="/kalabaka.png" />
       case 'Pertouli':
