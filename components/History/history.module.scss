@@ -103,6 +103,18 @@ div.mainContainer {
             margin-right: 20px;
             border-radius: 5px;
         }
+
+        #house {
+            background-image: url("/history/8.jpg");
+            height: 610px;
+            width: 50%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        p {
+            width: 50%;
+        }
     }
 
     div.carouselContainer {
