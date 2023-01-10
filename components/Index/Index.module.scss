@@ -13,6 +13,21 @@ div.main {
         font-weight: 600;
     }
 
+    div.hospitality {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #ac6015;
+        padding-bottom: 20px;
+        margin-left: 45%;
+        margin-right: 45%;
+
+        h2 {
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+    }
+
     section.landing {
         position: relative;
         width: 100%;
