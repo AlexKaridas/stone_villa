@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const History = () => {
 
-    const [image, setImage] = useState(null);
+    const [image, setImage] = useState(1);
     const nextImg = () => {
         if (image < 7) {
             setImage(image + 3)
@@ -54,7 +54,7 @@ const History = () => {
                         <img id="4" src="history/4.JPG"></img>
                         <img id="5" src="history/5.JPG"></img>
                         <img id="6" src="history/6.JPG"></img>
-                        <img id="9" src="history/7.JPG"></img>
+                        <img id="7" src="history/7.JPG"></img>
                     </div>
                     <button className={styles.next} type="button" onClick={() => { nextImg() }}><a href={'#' + image}><i className="fa-solid fa-arrow-right-long"></i></a></button>
                 </div>
