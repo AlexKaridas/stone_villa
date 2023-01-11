@@ -17,7 +17,7 @@ const History = () => {
         if (image > 1) {
             setImage(image - 3)
         } else {
-            setImage(9)
+            setImage(7)
         }
     }
 
