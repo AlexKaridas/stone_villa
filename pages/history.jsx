@@ -49,7 +49,7 @@ const History = () => {
                     <button className={styles.previous} type="button" onClick={() => { prevImg() }}><a href={'#' + image}><i className="fa-solid fa-arrow-left-long"></i></a></button>
                     <div className={styles.carousel}>
                         <img id="1" src="history/1.JPG"></img>
-                        <img id="2" src="history/2.JPG"></img>
+                        <img id="2" src="history/2.jpg"></img>
                         <img id="3" src="history/3.JPG"></img>
                         <img id="4" src="history/4.JPG"></img>
                         <img id="5" src="history/5.JPG"></img>
