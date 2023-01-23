@@ -5,11 +5,12 @@ import emailjs from 'emailjs-com';
 const Contact = () => {
 
     const form = useRef();
+    const emailjs_key = process.env.NEXT_PUBLIC_EMAILJS_KEY;
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('contact_service', 'contact_form', form.current, process.env.NEXT_PUBLIC_EMAILJS_KEY)
+        emailjs.sendForm('contact_service', 'contact_form', form.current, emailjs_key)
             .then((result) => {
                 console.log(result.text);
                 alert("Success!");
