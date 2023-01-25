@@ -12,7 +12,7 @@ const Contact = () => {
 
         emailjs.sendForm('contact_service', 'contact_form', form.current, emailjs_key)
             .then((result) => {
-                console.log(result.text);
+                console.log(result.text, result.status);
                 alert("Success!");
             }, (error) => {
                 console.log(error.text);
