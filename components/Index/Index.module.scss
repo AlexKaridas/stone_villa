@@ -5,6 +5,9 @@ div.main:root {
 }
 
 div.main {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
 
     #lineBreak {
         width: 100%;
@@ -33,13 +36,14 @@ div.main {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
 
         div.landing_image {
             position: relative;
             background-image: url('/landing.jpg');
             width: 50%;
-            height: 45vw;
+            // height: 45vw;
+            height: 700px;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -47,12 +51,14 @@ div.main {
 
         div.landingText {
             position: relative;
-            width: 50%;
+            width: 40%;
             text-align: left;
+            padding-left: 20px;
 
             h1.title {
                 position: relative;
-                font-size: 2.5vw;
+                // font-size: 2.5vw;
+                font-size: 28px;
                 color: var(--foreground);
                 font-weight: 400;
                 padding-left: 20px;
@@ -72,9 +78,10 @@ div.main {
                 position: relative;
                 text-align: start;
                 padding-top: 80px;
-                font-size: 1.2vw;
-                font-weight: 500;
-                width: 30vw;
+                // font-size: 1.2vw;
+                font-size: 16px;
+                font-weight: 400;
+                // width: 30vw;
             }
         }
 
@@ -82,14 +89,17 @@ div.main {
             position: absolute;
             top: 90%;
             left: 0%;
-            height: 2.5vw;
-            width: 10vw;
-            font-size: 1vw;
+            // height: 2.5vw;
+            height: 6%;
+            width: 14%;
+            // width: 10vw;
+            // font-size: 1vw;
+            font-size: 15px;
             padding: right 4px;
             padding-left: 4px;
             background-color: #ffffff;
             color: #ac6015;
-            font-weight: 700;
+            font-weight: 600;
             text-decoration: none;
             text-align: center;
             border-radius: 10px;
@@ -97,6 +107,7 @@ div.main {
             align-items: center;
             justify-content: center;
             transition: 0.3s;
+            border: 1px solid #ac6015;
 
             &:hover {
                 background-color: #ac6015;
@@ -110,7 +121,7 @@ div.main {
             bottom: 0vh;
             left: 20vw;
             transform: rotate(-180deg);
-            width: 80px;
+            width: 60px;
             filter: invert(36%) sepia(88%) saturate(478%) hue-rotate(349deg) brightness(95%) contrast(94%);
         }
 
@@ -133,7 +144,8 @@ div.main {
         margin-bottom: 100px;
 
         #titleD {
-            font-size: 1.54vw;
+            // font-size: 1.54vw;
+            font-size: 25px;
             padding-bottom: 50px;
             font-weight: 500;
         }
@@ -279,8 +291,9 @@ div.main {
                 position: relative;
                 padding-left: 100px;
                 padding-right: 100px;
-                font-size: 1vw;
-                font-weight: 500;
+                // font-size: 1vw;
+                font-size: 17px;
+                font-weight: 400;
                 text-align: center;
             }
         }
@@ -291,7 +304,8 @@ div.main {
         justify-content: center;
         align-items: center;
         font-weight: 500;
-        font-size: 1.54vw;
+        // font-size: 1.54vw;
+        font-size: 25px;
     }
 
     section.amenities {
@@ -324,7 +338,8 @@ div.main {
                 }
 
                 p {
-                    font-size: 1vw;
+                    // font-size: 1vw;
+                    font-size: 17px;
                     font-weight: 400;
                     padding-left: 10px;
                     white-space: nowrap;
@@ -340,7 +355,8 @@ div.main {
             text-align: center;
             width: 50%;
             margin: 0;
-            padding: 0;
+            padding-top: 5vw;
+
 
 
             article {
@@ -348,7 +364,8 @@ div.main {
 
                 p {
                     font-weight: 400;
-                    font-size: 1.05vw;
+                    // font-size: 1.05vw;
+                    font-size: 15px;
                 }
 
                 div.importantContainer {
@@ -364,8 +381,9 @@ div.main {
                     }
 
                     #important {
-                        font-size: 1.1vw;
-                        font-weight: 500;
+                        // font-size: 1.1vw;
+                        font-size: 16px;
+                        font-weight: 400;
                         border-bottom: 2px solid #ac6015;
                         margin-bottom: 25px;
                         padding-bottom: 10px;
@@ -381,7 +399,8 @@ div.main {
 
                 h3 {
                     font-weight: 500;
-                    font-size: 1.2vw;
+                    // font-size: 1.2vw;
+                    font-size: 17px;
                 }
             }
 
@@ -405,9 +424,10 @@ div.main {
             padding-bottom: 100px;
 
             p {
-                font-size: 1.2vw;
+                // font-size: 1.2vw;
+                font-size: 17px;
                 font-weight: 400;
-                padding-top: 20px;
+                padding-top: 10px;
                 border-bottom: 1px solid #ac6015;
             }
 
@@ -417,7 +437,7 @@ div.main {
             position: relative;
             display: flex;
             flex-direction: row;
-            width: 100%;
+            width: 90%;
             margin-bottom: 100px;
 
             div.sideIconContainer {
@@ -425,8 +445,9 @@ div.main {
 
                 div.sideIcon {
                     position: relative;
-                    width: 30vw;
-                    height: 100%;
+                    // width: 30vw;
+                    width: 100%;
+                    height: 80%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -527,7 +548,8 @@ div.main {
                             left: 220px;
                             position: absolute;
                             right: 0px;
-                            font-size: 1.1vw;
+                            // font-size: 1.1vw;
+                            font-size: 16px;
                             font-weight: 400;
                             padding-left: 10px;
                             padding-right: 10px;
@@ -544,7 +566,8 @@ div.main {
 
                         #time {
                             position: absolute;
-                            font-size: 1.1vw;
+                            // font-size: 1.1vw;
+                            font-size: 16px;
                             font-weight: 400;
                             white-space: nowrap;
                             left: 10px;
@@ -557,7 +580,7 @@ div.main {
                     }
 
                     #elati {
-                        left: 350px;
+                        left: 300px;
                     }
 
                     #destination1road {
@@ -667,8 +690,6 @@ div.main {
         }
 
         section.GuestAccess {
-
-
             div.GuestAccessContainer {
                 display: flex;
                 flex-direction: column;
@@ -797,7 +818,7 @@ div.main {
 }
 
 
-//!pc latop
+//!pc laptop
 @media only screen and (max-width: 1314px) {
     div.main {
         section.landing {
@@ -826,7 +847,7 @@ div.main {
 
                 h1.title {
                     position: relative;
-                    font-size: 2.7vw;
+                    font-size: 2.5vw;
                     color: var(--foreground);
                     font-weight: 400;
                 }
@@ -834,9 +855,9 @@ div.main {
                 p {
                     z-index: 0;
                     position: relative;
-                    font-size: 1.2vw;
+                    font-size: 1.1vw;
                     color: var(--foreground);
-                    font-weight: 500;
+                    font-weight: 400;
                     padding-left: 14px;
                     padding-top: 20px;
                 }
@@ -907,8 +928,6 @@ div.main {
                 flex-direction: column;
                 transition: 0.3s ease-in-out;
 
-
-
                 div.gallery {
                     display: flex;
                     margin-top: 50px;
@@ -952,13 +971,12 @@ div.main {
             }
 
             div.descriptionText {
-
                 p {
                     position: relative;
                     padding-left: 100px;
                     padding-right: 100px;
-                    font-size: 1.5vw;
-                    font-weight: 500;
+                    font-size: 1.3vw;
+                    font-weight: 400;
                     text-align: center;
                 }
             }
@@ -1003,7 +1021,7 @@ div.main {
                     }
 
                     p {
-                        font-size: 1.5vw;
+                        font-size: 1.3vw;
                         font-weight: 400;
                         padding-left: 10px;
                         white-space: nowrap;
@@ -1027,7 +1045,7 @@ div.main {
 
                     p {
                         font-weight: 400;
-                        font-size: 1.5vw;
+                        font-size: 1.3vw;
                     }
 
                     div.importantContainer {
@@ -1043,8 +1061,8 @@ div.main {
                         }
 
                         #important {
-                            font-size: 1.7vw;
-                            font-weight: 500;
+                            font-size: 1.5vw;
+                            font-weight: 400;
                             border-bottom: 2px solid #ac6015;
                             margin-bottom: 25px;
                             padding-bottom: 10px;
@@ -1061,7 +1079,7 @@ div.main {
 
                     h3 {
                         font-weight: 500;
-                        font-size: 1.7vw;
+                        font-size: 1.5vw;
                     }
                 }
 
@@ -1081,11 +1099,11 @@ div.main {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding-top: 50px;
+                padding-top: 30px;
                 padding-bottom: 100px;
 
                 p {
-                    font-size: 2vw;
+                    font-size: 1.5vw;
                     font-weight: 400;
                     padding-top: 20px;
                     border-bottom: 1px solid #ac6015;
