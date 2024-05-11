@@ -310,7 +310,7 @@ export default function Home() {
               <div className={ styles.roadmapItem }>
                 <p id={ styles.time }>25 λεπτά</p>
                 <div className={ styles.destination }></div>
-                <p onClick={ () => setIsClicked('Karditsa') }><a href="#sideIcon">Καρδίτσα</a></p> <p id={ styles.elati } onClick={ () => setIsClicked('Elati') }><a href="#sideIcon">- Elati</a></p>
+                <p onClick={ () => setIsClicked('Karditsa') }><a href="#sideIcon">Καρδίτσα</a></p> <p id={ styles.elati } onClick={ () => setIsClicked('Elati') }><a href="#sideIcon">- Ελάτη</a></p>
               </div>
               <hr id={ styles.destination4road } />
               <div className={ styles.roadmapItem }>
